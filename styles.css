@@ -745,7 +745,7 @@ background-image: linear-gradient(
 @media screen and (max-width: 767px) {
   .hero-title {
     max-width: 318px;
-    /* outline: 2px solid green; */
+
   }
 }
 
@@ -936,7 +936,7 @@ font-weight: 400;
 
 .work {
   background-color: var(--main-background-color);
-  /* padding-top: 0px; */
+
 }
 
 @media screen and (max-width: 1199px) {
@@ -1073,7 +1073,7 @@ font-weight: 400;
 }
 
 .customers {
-  /* padding-top: 130px; */
+
 }
 
 .customers-list {
@@ -1151,8 +1151,7 @@ font-weight: 400;
 
 .footer {
   background-color: var(--header-color);
-  /* padding-top: 100px;
-  padding-bottom: 100px; */
+
 }
 
 .footer a {
@@ -1334,7 +1333,7 @@ font-weight: 400;
 }
 
 .subscribe-container {
-  /* margin-left: 80px; */
+
 }
 
 .user-email {
@@ -1578,7 +1577,8 @@ font-weight: 400;
 
 /* Portfolio */
 .portfolio {
-  /* padding-top: 48px; */
+  
+  
 }
 
 .main-portfolio {
@@ -1591,29 +1591,25 @@ font-weight: 400;
 
   column-gap: 24px;
   row-gap: 16px;
-
+ 
  
 }
 
 
 @media screen and (max-width: 767px) {
-  .button-item:nth-child(3) {
-  margin-right: 70px;
-}
+  .button-list {
+   
+    max-width: 270px;
+}   
   }
 
 @media screen and (min-width: 768px) {
   .button-list {
     justify-content: center;
-    
+  
 }
   }
 
-
-
-.button-item + .button-item {
-  /* margin-left: 24px; */
-}
 
 .button-portfolio {
   color: #404BBF;

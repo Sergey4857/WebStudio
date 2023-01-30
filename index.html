@@ -16,7 +16,7 @@
 <body>
    <!-- Шапка сайта  -->
    <header class="header ">
-      <div class="container header-content desktop-container">
+      <div class="container header-content">
 
 
          <a href="./index.html" class="logo-link"><span class="logo-color">Web</span>studio</a>
@@ -94,14 +94,14 @@
    <main>
       <!-- Герой -->
       <section class="hero">
-         <div class="container desktop-container">
+         <div class="container">
             <h1 class="hero-title">Effective Solutions for Your Business</h1>
             <button type="button" class="hero-button" data-modal-open>Order Service</button>
          </div>
       </section>
       <!-- Преимущества -->
       <section class="privilege section">
-         <div class="container desktop-container">
+         <div class="container">
             <h2 class="visually-hidden">Privilege</h2>
             <ul class="privilege-list">
                <li class="privilege-item">
@@ -162,7 +162,7 @@
       </section>
       <!-- Примеры работ -->
       <section class="work section">
-         <div class="container desktop-container">
+         <div class="container">
             <h2 class="section-title">What are we doing</h2>
             <ul class="work-list">
 
@@ -170,7 +170,7 @@
 
                <picture>
                   <source srcset="./images/about-desktop/about-1-1x.jpg 1x, 
-                                   ./images/about-desktop/about-1-2x.jpg 2x" media="(min-width: 1200px)">
+                                   ./images/about-desktop/about-1-2x.jpg 2x">
                   <img src="./images/about-desktop/about-1-1x.jpg" alt="Frontend" width="360">
                </picture>
 
@@ -180,7 +180,7 @@
                   <picture>
                
                      <source srcset="./images/about-desktop/about-2-1x.jpg 1x, 
-                                    ./images/about-desktop/about-2-2x.jpg 2x" media="(min-width: 1200px)">
+                                    ./images/about-desktop/about-2-2x.jpg 2x">
                      <img src="./images/about-desktop/about-2-1x.jpg" alt="mobile application development" width="360">
                   </picture>
 
@@ -189,8 +189,7 @@
 
                   <picture>
                      <source srcset="./images/about-desktop/about-3-1x.jpg 1x, 
-                                    ./images/about-desktop/about-3-2x.jpg 2x"
-                        media="(min-width: 1200px)">
+                                    ./images/about-desktop/about-3-2x.jpg 2x">
                      <img src="./images/about-desktop/about-3-1x.jpg" alt="smartphone software" width="360">
                   </picture>
                </li>
@@ -200,7 +199,7 @@
       </section>
       <!-- Работники -->
       <section class="team section">
-         <div class="container desktop-container">
+         <div class="container">
             <h2 class="section-title">Our team</h2>
 
             <ul class="team-list">
@@ -208,7 +207,7 @@
                <li class="team-item">
                   <picture>
                      <source srcset="./images/team/team-1-1x.jpg 1x, 
-                                       ./images/team/team-1-2x.jpg 2x" media="(min-width: 480px)">
+                      ./images/team/team-1-2x.jpg 2x">
                      <img src="./images/team/team-1-1x.jpg" alt="photo Mark Guerrero" width="264">
                   </picture>
                   <div class="card-content">
@@ -369,7 +368,7 @@
       </section>
 
       <section class="customers section">
-         <div class="container desktop-container">
+         <div class="container">
             <h2 class="section-title">Customers</h2>
             <ul class="customers-list">
                <li class="customers-item">
@@ -435,7 +434,7 @@
    </main>
    <!-- Футер -->
    <footer class="footer section">
-      <div class="container footer-block desktop-container">
+      <div class="container footer-block">
          <div class="footer-content">
             <a href="./index.html" class="logo-title"><span class="logo-color">Web</span>studio</a>
             <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing
@@ -567,6 +566,11 @@
    <script src="./js/modal.js">
 
    </script>
+   
+   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+
 
    <script src="./js/mobile-menu.js">
 

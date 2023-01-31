@@ -273,6 +273,7 @@ address {
   .header {
   padding-bottom: 24px;
   padding-top: 24px;
+  position: relative;
   }
 }
 
@@ -361,22 +362,29 @@ address {
 }
 
 .menu-container.is-open {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: var(--main-background-color);
-  z-index: 5;
   
-  
+  transform: translateX(0);
+  opacity: 1;
+
 }
 
 @media screen and (max-width: 767px) {
   .menu-container {
-    display: none;
- 
+    
+    position: absolute;
+    top: 0;
+    left:0;
+    transform: translateX(-100%);
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--main-background-color);
+    z-index: 5;
+    opacity: 0;
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1), opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
     
   }
 }
@@ -832,16 +840,22 @@ letter-spacing: 0.02em;
 
   padding: 16px 32px;
   border: 1px solid transparent;
+  transform: scale(1);
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
-.hero-button:focus {
+.hero-button:focus,
+.hero-button:active
+{
   background-color: #404bbf;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transform: scale(1.1);
 }
+
 
 .privilege {
   background-color: var(--main-background-color);
@@ -1102,12 +1116,15 @@ font-weight: 400;
   align-items: center;
   background-color: #4d5ae5;
   border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .item-link:hover,
 .item-link:focus {
   background-color: #404bbf;
+  transform: scale(1.2);
 }
 
 .customers {
@@ -1320,12 +1337,16 @@ font-weight: 400;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+  
+  
 }
 
 .link-footer:hover,
 .link-footer:focus {
   background-color: #31d0aa;
+  transform: scale(1.2);
 }
 
 .link-footer-mobile {
@@ -1428,7 +1449,16 @@ font-weight: 400;
   margin-bottom: 0px;
   border: transparent;
   cursor: pointer;
+  transform: scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
+
+.submit-btn:hover,
+.submit-btn:focus{
+transform: scale(1.1);
+}
+
+
 @media screen and (max-width: 767px) {
   .submit-btn{
   margin-left: auto;
@@ -1702,9 +1732,12 @@ font-size: 9px;
   padding-bottom: 8px;
   padding-left: 16px;
   padding-right: 16px;
+  transform: scale(1);
+   
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .button-portfolio {
@@ -1721,6 +1754,7 @@ font-size: 9px;
   color: var(--main-background-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+    transform: scale(1.1);
 }
 
 .project-list {
